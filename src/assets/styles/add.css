@@ -1,0 +1,16 @@
+.box-w{
+    width: 60vw;
+}
+.vertical-breaker{
+    height:20px;
+    width:1px;
+    background-color:#cdcdcd;
+}
+.horizental-breaker{
+    height: 1px;
+    background-color: #cdcdcd;
+    width:60vw
+}
+.input{
+outline: none;
+}
