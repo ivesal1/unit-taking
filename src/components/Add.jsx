@@ -20,7 +20,7 @@ const Add = () => {
                                     شما انتخاب واحد خودرا انجام دادید 
                                     برای انتخاب مجدد دکمه زیر را بفشارید و صفحه را ریلود کنید
                                 </div>
-                                <button className="" onClick={() => localStorage.clear()}>
+                                <button className="border px-4 py-1 mt-2 rounded-2xl" onClick={() => localStorage.clear()}>
                                     انتخاب واحد مجدد
                                 </button>
                         </div>
@@ -85,10 +85,10 @@ const Add = () => {
                                 <div className="overflow-hidden">{ name }</div>
                                 <div className="vertical-breaker"></div>
                                 <div> کد درس: { id }</div>
-                                <div onClick={() => setFiltersName(filterNames.filter((item, i) => {
+                                <button onClick={() => setFiltersName(filterNames.filter((item, i) => {
                                     index != i
                                     localStorage.removeItem(index != i)
-                            }))} className=""><img src="./pic/trash.svg"/></div>
+                            }))} className=""><img src="./pic/trash.svg"/></button>
                                 </div>
                         </div>
                         )
