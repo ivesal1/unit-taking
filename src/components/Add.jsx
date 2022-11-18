@@ -72,7 +72,7 @@ const Add = () => {
                 <div className="w-3/4 px-4">
                     {filterNames.map(({ id, name, masterName }, index) => {
                         return (
-                        <div key={ id }>
+                        <div key={ index }>
                             {
                                 filterNames.length > 0 && 
                                 <div className="flex justify-center">
@@ -86,8 +86,8 @@ const Add = () => {
                                 <div className="vertical-breaker"></div>
                                 <div> کد درس: { id }</div>
                                 <button onClick={() => setFiltersName(filterNames.filter((item, i) => {
-                                    index != i
-                                    localStorage.removeItem(index != i)
+                                    return index != i
+                                    // localStorage.removeItem(index != i)
                             }))} className=""><img src="./pic/trash.svg"/></button>
                                 </div>
                         </div>
